@@ -1,0 +1,24 @@
+﻿.product {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 5px 70px rgba(0,0,0,0.3);
+    width: max-content;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.thumbnail, .prod-desc {
+    width: 200px;
+}
+
+    .thumbnail img {
+        width: 140%;
+        transform: translateY(-30px);
+    }
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-row-gap: 70px;
+}

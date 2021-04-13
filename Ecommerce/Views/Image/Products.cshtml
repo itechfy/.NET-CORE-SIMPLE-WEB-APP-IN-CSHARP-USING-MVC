@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+}
+
+@using Ecommerce.Models
+@model List<Item>
+<head>
+    <link rel="stylesheet" href="~/style.css" />
+</head>
+
+<h2>Top Products - Explore</h2>
+<hr />
+<div class="item-list">
+    @foreach (var product in Model)
+    {
+        <div class="item">
+            <div class="product p1">
+                <div class="thumbnail">
+                    <img src="~/img/shoe.png" />
+                </div>
+                <div class="prod-desc">
+                    <h3>@product.title</h3>
+                    <p>@product.description</p>
+                    <p>@product.price$</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
